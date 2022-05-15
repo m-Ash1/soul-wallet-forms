@@ -236,3 +236,7 @@ nav {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.no-underline{
+  text-decoration: none;
+}
