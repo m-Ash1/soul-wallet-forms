@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+:root {
+  --mainColor: #252525;
+  --secondaryColor: #00b6f5;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+.sidebar {
+  width: 4%;
+  height: 100%;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+i {
+  cursor: pointer;
+}
+.icons i {
+  color: white;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons i:hover {
+  background-color: #3a3939;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.main {
+  width: 95%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px #00000014 solid;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+.money {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+}
+.EGP {
+  background-color: #25252534;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 150px;
+  height: 50px;
+  color: var(--mainColor);
+}
+.nav-Dollars {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 150px;
+  height: 50px;
+  border: 1px rgba(17, 17, 17, 0.089) solid;
+  border-left-color: #eef2fe;
+  color: var(--mainColor);
+}
+.nav-Dollars span {
+  width: 10px;
+}
+.profile {
+  display: flex;
+  height: 50px;
+  width: 160px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--mainColor);
+}
+.profile .image {
+  width: 50px;
+  height: 5 0px;
+}
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-msg {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 22px;
+  color: var(--mainColor);
+  font-weight: bold;
+}
+.welcome-msg span {
+  margin-left: 8px;
+  color: var(--secondaryColor);
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 25px;
+  width: 100%;
+  padding: 15px 45px;
+}
+.e-wallet .add {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr 1fr;
+  gap: 15px;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
+.add input,
+.add select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+  background-color: transparent;
+}
+.add button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #252525;
+  color: white;
+  transition: 0.3s;
+}
+.add button:hover {
+  background-color: #504f4f;
+}
+
+.e-wallet .reports {
+  display: grid;
+}
+.e-wallet .reports .report {
+  margin-top: 20px;
+  padding: 15px 15px;
+  background-color: #f5000021;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.earn {
+  background-color: #f2f6fe !important;
+}
+.show {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  margin: 10px auto;
+  width: 150px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.show:hover {
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 5px;
+}
+.profile-overview .image {
+  display: flex;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid black;
+}
+.profile-overview .image img {
+  width: 100%;
+}
+.right-page-body {
+  padding: 50px 20px 20px 20px;
+  display: grid;
+  row-gap: 10px;
+}
+.row {
+  background-color: #f2f6fe;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  padding: 12.2px 0px;
+  padding-left: 30px;
+  color: var(--mainColor);
+  font-size: 18px;
+  font-weight: 600;
+}
+.row input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  margin-right: 15px;
+}
+.row button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #252525;
+  color: white;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+.row span {
+  margin-left: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
